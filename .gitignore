@@ -1,5 +1,5 @@
 # Credentials
-/server/db-credentials
+/server/mongo/credentials.js
 
 # dependencies
 /client/node_modules
@@ -14,7 +14,7 @@
 
 # misc
 /client.DS_Store
-/client.env.local
+/client.env.localgit
 /client/client.env.development.local
 /client.env.test.local
 /client.env.production.local
