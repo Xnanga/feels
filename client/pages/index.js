@@ -47,6 +47,11 @@ const GlobalStyles = css`
     font-weight: 500;
     margin-bottom: 2rem;
   }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
 `;
 
 const HomePage = () => {

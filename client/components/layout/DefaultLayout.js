@@ -11,13 +11,13 @@ const ThreeColumnGrid = styled.nav`
 `;
 
 const DefaultLayout = () => {
-  return ( 
+  return (
     <ThreeColumnGrid>
       <MainNav />
       <Content />
       <Profile />
     </ThreeColumnGrid>
-   );
-}
- 
+  );
+};
+
 export default DefaultLayout;

@@ -1,5 +1,5 @@
 # Credentials
-/server/mongo
+/server/mongo/credentials.js
 
 # dependencies
 /client/node_modules

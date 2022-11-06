@@ -44,7 +44,10 @@ const MainNav = () => {
           <NavButton label={'Emotion Tracker'} />
         </li>
         <li>
-          <NavButton label={'My Account'} />
+          <NavButton label={'Blog'} />
+        </li>
+        <li>
+          <NavButton label={'About'} />
         </li>
       </ul>
       <span>Created by ya boi</span>
