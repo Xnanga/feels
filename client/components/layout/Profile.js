@@ -16,11 +16,9 @@ const ProfileBox = styled.aside`
 const Profile = () => {
   return (
     <ProfileBox>
-      <MiniProfile
-        name='Jamie Peutherer'
-      />
+      <MiniProfile name="Jamie Peutherer" />
     </ProfileBox>
   );
-}
- 
+};
+
 export default Profile;

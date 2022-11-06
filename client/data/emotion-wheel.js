@@ -343,4 +343,389 @@ export const emotionWheelData = [
       },
     ],
   },
+  {
+    name: 'angry',
+    colorHex: `#F61E27`,
+    level: 1,
+    children: [
+      {
+        name: 'let down',
+        colorHex: `#F9767B`,
+        level: 2,
+        children: [
+          {
+            name: 'betrayed',
+            colorHex: `#FDCED0`,
+            level: 3,
+          },
+          {
+            name: 'resentful',
+            colorHex: `#FDCED0`,
+            level: 3,
+          },
+        ],
+      },
+      {
+        name: 'bitter',
+        colorHex: `#F9767B`,
+        level: 2,
+        children: [
+          {
+            name: 'indignant',
+            colorHex: `#FDCED0`,
+            level: 3,
+          },
+          {
+            name: 'violated',
+            colorHex: `#FDCED0`,
+            level: 3,
+          },
+        ],
+      },
+      {
+        name: 'mad',
+        colorHex: `#F9767B`,
+        level: 2,
+        children: [
+          {
+            name: 'furious',
+            colorHex: `#FDCED0`,
+            level: 3,
+          },
+          {
+            name: 'jealous',
+            colorHex: `#FDCED0`,
+            level: 3,
+          },
+        ],
+      },
+      {
+        name: 'aggressive',
+        colorHex: `#F9767B`,
+        level: 2,
+        children: [
+          {
+            name: 'provoked',
+            colorHex: `#FDCED0`,
+            level: 3,
+          },
+          {
+            name: 'hostile',
+            colorHex: `#FDCED0`,
+            level: 3,
+          },
+        ],
+      },
+      {
+        name: 'frustrated',
+        colorHex: `#F9767B`,
+        level: 2,
+        children: [
+          {
+            name: 'infuriated',
+            colorHex: `#FDCED0`,
+            level: 3,
+          },
+          {
+            name: 'annoyed',
+            colorHex: `#FDCED0`,
+            level: 3,
+          },
+        ],
+      },
+      {
+        name: 'distant',
+        colorHex: `#F9767B`,
+        level: 2,
+        children: [
+          {
+            name: 'withdrawn',
+            colorHex: `#FDCED0`,
+            level: 3,
+          },
+          {
+            name: 'numb',
+            colorHex: `#FDCED0`,
+            level: 3,
+          },
+        ],
+      },
+      {
+        name: 'critical',
+        colorHex: `#F9767B`,
+        level: 2,
+        children: [
+          {
+            name: 'sceptical',
+            colorHex: `#FDCED0`,
+            level: 3,
+          },
+          {
+            name: 'dismissive',
+            colorHex: `#FDCED0`,
+            level: 3,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'fearful',
+    colorHex: `#AC5E2A`,
+    level: 1,
+    children: [
+      {
+        name: 'scared',
+        colorHex: `#D3814A`,
+        level: 2,
+        children: [
+          {
+            name: 'helpless',
+            colorHex: `#E1A983`,
+            level: 3,
+          },
+          {
+            name: 'frightened',
+            colorHex: `#E1A983`,
+            level: 3,
+          },
+        ],
+      },
+      {
+        name: 'anxious',
+        colorHex: `#D3814A`,
+        level: 2,
+        children: [
+          {
+            name: 'overwhelmed',
+            colorHex: `#E1A983`,
+            level: 3,
+          },
+          {
+            name: 'worried',
+            colorHex: `#E1A983`,
+            level: 3,
+          },
+        ],
+      },
+      {
+        name: 'insecure',
+        colorHex: `#D3814A`,
+        level: 2,
+        children: [
+          {
+            name: 'inferior',
+            colorHex: `#E1A983`,
+            level: 3,
+          },
+          {
+            name: 'inadequate',
+            colorHex: `#E1A983`,
+            level: 3,
+          },
+        ],
+      },
+      {
+        name: 'weak',
+        colorHex: `#D3814A`,
+        level: 2,
+        children: [
+          {
+            name: 'worthless',
+            colorHex: `#E1A983`,
+            level: 3,
+          },
+          {
+            name: 'insignificant',
+            colorHex: `#E1A983`,
+            level: 3,
+          },
+        ],
+      },
+      {
+        name: 'rejected',
+        colorHex: `#D3814A`,
+        level: 2,
+        children: [
+          {
+            name: 'excluded',
+            colorHex: `#E1A983`,
+            level: 3,
+          },
+          {
+            name: 'persecuted',
+            colorHex: `#E1A983`,
+            level: 3,
+          },
+        ],
+      },
+      {
+        name: 'threatened',
+        colorHex: `#D3814A`,
+        level: 2,
+        children: [
+          {
+            name: 'nervous',
+            colorHex: `#E1A983`,
+            level: 3,
+          },
+          {
+            name: 'exposed',
+            colorHex: `#E1A983`,
+            level: 3,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'bad',
+    colorHex: `#40CE89`,
+    level: 1,
+    children: [
+      {
+        name: 'bored',
+        colorHex: `#88E1B6`,
+        level: 2,
+        children: [
+          {
+            name: 'indifferent',
+            colorHex: `#D0F3E2`,
+            level: 3,
+          },
+          {
+            name: 'apathetic',
+            colorHex: `#D0F3E2`,
+            level: 3,
+          },
+        ],
+      },
+      {
+        name: 'busy',
+        colorHex: `#88E1B6`,
+        level: 2,
+        children: [
+          {
+            name: 'pressured',
+            colorHex: `#D0F3E2`,
+            level: 3,
+          },
+          {
+            name: 'rushed',
+            colorHex: `#D0F3E2`,
+            level: 3,
+          },
+        ],
+      },
+      {
+        name: 'stressed',
+        colorHex: `#88E1B6`,
+        level: 2,
+        children: [
+          {
+            name: 'out of control',
+            colorHex: `#D0F3E2`,
+            level: 3,
+          },
+          {
+            name: 'overwhelmed',
+            colorHex: `#D0F3E2`,
+            level: 3,
+          },
+        ],
+      },
+      {
+        name: 'tired',
+        colorHex: `#88E1B6`,
+        level: 2,
+        children: [
+          {
+            name: 'sleepy',
+            colorHex: `#D0F3E2`,
+            level: 3,
+          },
+          {
+            name: 'unfocused',
+            colorHex: `#D0F3E2`,
+            level: 3,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'surprised',
+    colorHex: `#9654C1`,
+    level: 1,
+    children: [
+      {
+        name: 'startled',
+        colorHex: `#C097DA`,
+        level: 2,
+        children: [
+          {
+            name: 'shocked',
+            colorHex: `#E9DBF2`,
+            level: 3,
+          },
+          {
+            name: 'dismayed',
+            colorHex: `#E9DBF2`,
+            level: 3,
+          },
+        ],
+      },
+      {
+        name: 'confused',
+        colorHex: `#C097DA`,
+        level: 2,
+        children: [
+          {
+            name: 'disillusioned',
+            colorHex: `#E9DBF2`,
+            level: 3,
+          },
+          {
+            name: 'perplexed',
+            colorHex: `#E9DBF2`,
+            level: 3,
+          },
+        ],
+      },
+      {
+        name: 'amazed',
+        colorHex: `#C097DA`,
+        level: 2,
+        children: [
+          {
+            name: 'astonished',
+            colorHex: `#E9DBF2`,
+            level: 3,
+          },
+          {
+            name: 'awe',
+            colorHex: `#E9DBF2`,
+            level: 3,
+          },
+        ],
+      },
+      {
+        name: 'excited',
+        colorHex: `#C097DA`,
+        level: 2,
+        children: [
+          {
+            name: 'eager',
+            colorHex: `#E9DBF2`,
+            level: 3,
+          },
+          {
+            name: 'energetic',
+            colorHex: `#E9DBF2`,
+            level: 3,
+          },
+        ],
+      },
+    ],
+  },
 ];
