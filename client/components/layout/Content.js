@@ -1,6 +1,6 @@
-import { useRef, useState } from 'react';
 import styled from '@emotion/styled';
 
+import GreetingBlock from '../GreetingBlock';
 import EmotionSelector from '../EmotionSelector';
 import TextEditor from '../TextEditor';
 
@@ -9,7 +9,6 @@ const ContentBox = styled.main`
 
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   padding: var(--default-container-padding);
   padding-top: 2.5rem;
@@ -19,7 +18,7 @@ const ContentBox = styled.main`
 const Content = ({ firstName = 'Jamie' }) => {
   return (
     <ContentBox>
-      <h1>{`Hello ${firstName}`}</h1>
+      <GreetingBlock username={firstName} />
       <EmotionSelector />
       <TextEditor />
     </ContentBox>

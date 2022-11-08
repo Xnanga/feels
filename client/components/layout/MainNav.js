@@ -14,11 +14,12 @@ const NavBox = styled.nav`
   background-color: var(--background-color-grey);
 
   & > ul {
+    height: 5rem;
     list-style-type: none;
     margin-top: 6rem;
 
     & > li:not(:last-child) {
-      margin-bottom: 1rem;
+      margin-bottom: 3rem;
     }
   }
 

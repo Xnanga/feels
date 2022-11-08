@@ -6,7 +6,7 @@ import Profile from './Profile';
 
 const ThreeColumnGrid = styled.nav`
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   min-height: 100vh;
 `;
 
