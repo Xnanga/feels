@@ -45,7 +45,7 @@ const GlobalStyles = css`
   h1 {
     font-size: 3rem;
     font-weight: 500;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   h2 {
