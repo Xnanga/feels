@@ -19,6 +19,7 @@ const BarButton = styled.button`
   text-align: center;
   text-transform: capitalize;
   background-color: ${({ colorHex }) => colorHex || '#ffffff'};
+  border: ${({ selected }) => (selected ? '3px solid green' : '')};
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   cursor: pointer;
@@ -48,7 +49,6 @@ const BarButtonIconContainer = styled.div`
 `;
 
 const HiddenContentContainer = styled.div`
-  padding: 1.25rem;
   background-color: lightgray;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -60,6 +60,7 @@ const AccordionButton = ({
   onClick,
   colorHex,
   hiddenJSXContent,
+  selected,
 }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
@@ -70,7 +71,11 @@ const AccordionButton = ({
 
   return (
     <BarButtonContainer>
-      <BarButton colorHex={colorHex} onClick={(e) => handleClick(e)}>
+      <BarButton
+        selected={selected}
+        colorHex={colorHex}
+        onClick={(e) => handleClick(e)}
+      >
         <span>{label}</span>
         {iconSrc && (
           <BarButtonIconContainer>
@@ -95,4 +100,5 @@ AccordionButton.propTypes = {
   onClick: PropTypes.func.isRequired,
   colorHex: PropTypes.string,
   hiddenJSXContent: PropTypes.element,
+  selected: PropTypes.bool,
 };
