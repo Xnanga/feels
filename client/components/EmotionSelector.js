@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import { useRef } from 'react';
+import { useState } from 'react';
 
-import { emotionWheelData } from '../data/emotion-wheel';
+import emotionWheelData from '../data/emotion-wheel';
 import AccordionButton from './buttons/AccordionButton';
 
 const SelectorContainer = styled.div`
@@ -12,11 +12,9 @@ const SelectorContainer = styled.div`
 `;
 
 const EmotionSelector = () => {
-  const selectedEmotion = useRef(null);
+  const [selectedEmotion, setSelectedEmotion] = useState(null);
 
-  const onSelectEmotion = (emotionName) => {
-    selectedEmotion.current = emotionName;
-  };
+  const onSelectEmotion = (emotionName) => setSelectedEmotion(emotionName);
 
   const renderChildEmotions = (emotionName, level = 0) => {
     let emotionTree;
@@ -48,6 +46,7 @@ const EmotionSelector = () => {
           iconSrc={'client/public/svg/add-plus-circle-svgrepo-com.svg'}
           colorHex={emotion.colorHex}
           hiddenJSXContent={renderChildEmotions(emotion.name, level + 1)}
+          selected={emotion.name === selectedEmotion}
         />
       );
     });
@@ -63,10 +62,11 @@ const EmotionSelector = () => {
             <AccordionButton
               key={emotion.name}
               label={emotion.name}
-              onClick={onSelectEmotion}
+              onClick={(emotion) => onSelectEmotion(emotion)}
               iconSrc={'client/public/svg/add-plus-circle-svgrepo-com.svg'}
               colorHex={emotion.colorHex}
               hiddenJSXContent={renderChildEmotions(emotion.name)}
+              selected={emotion.name === selectedEmotion}
             />
           );
         })}

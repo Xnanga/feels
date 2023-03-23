@@ -5,6 +5,8 @@ import 'react-quill/dist/quill.snow.css';
 import useSessionStorage from '../custom-hooks/useSessionStorage';
 
 const EditorBox = styled.div`
+  margin-bottom: 2rem;
+
   & > .quill,
   .ql-container,
   .ql-editor {

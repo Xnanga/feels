@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import GreetingBlock from '../GreetingBlock';
 import EmotionSelector from '../EmotionSelector';
 import TextEditor from '../TextEditor';
+import DrawingBoard from '../DrawingBoard';
 
 const ContentBox = styled.main`
   grid-column: 2 / 6;
@@ -21,6 +22,7 @@ const Content = ({ firstName = 'Jamie' }) => {
       <GreetingBlock username={firstName} />
       <EmotionSelector />
       <TextEditor />
+      <DrawingBoard />
     </ContentBox>
   );
 };
