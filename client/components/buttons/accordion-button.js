@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { useState } from 'react';
-import AddPlusCircle from '../svg-components/AddPlusCircle';
+import AddPlusCircle from '../svg-components/add-plus-circle';
 
 const BarButtonContainer = styled.div`
   display: flex;
