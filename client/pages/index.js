@@ -3,7 +3,7 @@ import { Global, css } from '@emotion/react';
 
 import DefaultLayout from '../components/layout/default-layout';
 
-const inter = Inter();
+const inter = Inter({ subsets: ['latin'] });
 const GlobalStyles = css`
   :root {
     --default-font-size: 1.6rem;

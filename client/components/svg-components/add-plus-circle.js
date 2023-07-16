@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const AddPlusCircle = (props) => (
+const AddPlusCircle = ({colorHex, ...props}) => (
   <svg
     width={32}
     height={32}
@@ -11,7 +11,7 @@ const AddPlusCircle = (props) => (
   >
     <path
       d="M8 12h4m0 0h4m-4 0v4m0-4V8m0 13a9 9 0 1 1 0-18 9 9 0 0 1 0 18Z"
-      stroke={props.colorHex}
+      stroke={colorHex}
       strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"

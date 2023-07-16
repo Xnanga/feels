@@ -75,7 +75,7 @@ const AccordionButton = ({
       >
         <span>{label}</span>
         {iconSrc && (
-          <BarButtonIconContainer>
+          <BarButtonIconContainer data-testid="bar-button-icon">
             <AddPlusCircle colorHex={iconColorHex} />
           </BarButtonIconContainer>
         )}
