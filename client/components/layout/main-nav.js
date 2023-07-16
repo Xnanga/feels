@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styled from '@emotion/styled';
 
-import NavButton from '../buttons/NavButton';
+import NavButton from '../buttons/nav-button';
 
 const NavBox = styled.nav`
   display: flex;

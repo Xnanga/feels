@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { useState } from 'react';
 
 import emotionWheelData from '../data/emotion-wheel';
-import AccordionButton from './buttons/AccordionButton';
+import AccordionButton from './buttons/accordion-button';
 
 const SelectorContainer = styled.div`
   display: flex;
