@@ -15,11 +15,11 @@ const BarButton = styled.button`
   justify-content: center;
 
   height: 5rem;
-  padding: 1rem;
   text-align: center;
   text-transform: capitalize;
   background-color: ${({ colorHex }) => colorHex || '#ffffff'};
-  border: ${({ selected }) => (selected ? '3px solid green' : '')};
+  border: ${({ selected }) =>
+    selected ? '4px solid purple' : '4px solid transparent'};
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   cursor: pointer;
@@ -30,10 +30,7 @@ const BarButton = styled.button`
 
   & > span {
     margin: 0 auto;
-    background: inherit;
-    background-clip: text;
-    color: transparent;
-    filter: invert(1) grayscale(1) contrast(100);
+    color: #000000;
     font-weight: 700;
     text-transform: capitalize;
     letter-spacing: 0.06rem;
@@ -42,9 +39,8 @@ const BarButton = styled.button`
 
 const BarButtonIconContainer = styled.div`
   position: absolute;
-  top: 21%;
+  top: 13%;
   right: 1rem;
-  filter: invert(1) grayscale(1) contrast(100);
   pointer-events: none;
 `;
 
@@ -57,8 +53,9 @@ const HiddenContentContainer = styled.div`
 const AccordionButton = ({
   label,
   iconSrc,
+  iconColorHex,
   onClick,
-  colorHex,
+  bgColorHex,
   hiddenJSXContent,
   selected,
 }) => {
@@ -73,18 +70,18 @@ const AccordionButton = ({
     <BarButtonContainer>
       <BarButton
         selected={selected}
-        colorHex={colorHex}
+        colorHex={bgColorHex}
         onClick={(e) => handleClick(e)}
       >
         <span>{label}</span>
         {iconSrc && (
           <BarButtonIconContainer>
-            <AddPlusCircle colorHex={colorHex} />
+            <AddPlusCircle colorHex={iconColorHex} />
           </BarButtonIconContainer>
         )}
       </BarButton>
       {accordionOpen && hiddenJSXContent && (
-        <HiddenContentContainer colorHex={colorHex}>
+        <HiddenContentContainer colorHex={bgColorHex}>
           {hiddenJSXContent}
         </HiddenContentContainer>
       )}
