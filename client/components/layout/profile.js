@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
-import CalendarSlider from '../CalendarSlider';
-import MiniProfile from '../MiniProfile';
-import HighlightsBlock from '../HighlightsBlocks';
+import CalendarSlider from '../calendar-slider';
+import MiniProfile from '../mini-profile';
+import HighlightsBlock from '../highlights-block';
 
 const ProfileBox = styled.aside`
   display: flex;

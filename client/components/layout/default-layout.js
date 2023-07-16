@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
-import MainNav from './MainNav';
-import Content from './Content';
-import Profile from './Profile';
+import MainNav from './main-nav';
+import Content from './content';
+import Profile from './profile';
 
 const ThreeColumnGrid = styled.nav`
   display: grid;

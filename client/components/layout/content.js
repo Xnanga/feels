@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 
-import GreetingBlock from '../GreetingBlock';
-import EmotionSelector from '../EmotionSelector';
-import TextEditor from '../TextEditor';
-import DrawingBoard from '../DrawingBoard';
+import GreetingBlock from '../greeting-block';
+import EmotionSelector from '../emotion-selector';
+import TextEditor from '../text-editor';
+import DrawingBoard from '../drawing-board';
 
 const ContentBox = styled.main`
   grid-column: 2 / 6;

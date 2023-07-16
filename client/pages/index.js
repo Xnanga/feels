@@ -1,7 +1,7 @@
 import { Inter } from '@next/font/google';
 import { Global, css } from '@emotion/react';
 
-import DefaultLayout from '../components/layout/DefaultLayout';
+import DefaultLayout from '../components/layout/default-layout';
 
 const inter = Inter();
 const GlobalStyles = css`
