@@ -30,7 +30,7 @@ const modules = {
 const TextEditor = () => {
   const { sessionValue, setSessionValue } = useSessionStorage(
     'JournalContent',
-    null
+    ''
   );
 
   return (
